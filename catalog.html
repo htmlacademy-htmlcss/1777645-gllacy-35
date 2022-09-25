@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="./img/logo.svg" width="1" height="1" alt="Логотип Глейси.">
+          <img class="page-header-logo" src="" width="" height="" alt="Логотип Глейси.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -44,30 +44,199 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="main-inner">
+
+      <header class="inner-header">
+        <h1 class="inner-header-title">Сливочное мороженое</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Сливочное мороженое</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+          <p>
+            <label for="filter-sorting">Сортировка:</label>
+            <select name="filter-sorting" id="filter-sorting">
+              <option value="popular">по популярности</option>
+              <option value="expensive">по возрастанию цены</option>
+              <option value="cheap">по уменьшению цены</option>
+            </select>
+          </p>
+          <p>
+            <label for="filter-price">Цена: 100 ₽ - 500 ₽</label>
+            <input type="range" name="filter-price" id="filter-price" min="100" max="500" step="10">
+          </p>
+          <p>
+            <label for="filter-fatness">Жирность:</label>
+            <input type="radio" name="filter-fatness" value="0"> 0%
+            <input type="radio" name="filter-fatness" value="up-to-10" checked> до 10%
+            <input type="radio" name="filter-fatness" value="up-to-30"> до 30%
+            <input type="radio" name="filter-fatness" value="above-30"> выше 30%
+          </p>
+          <p>
+            <label for="filter-filler">Наполнители:</label>
+            <input type="checkbox" name="filter-filler" value="chocolate" checked> шоколадные
+            <input type="checkbox" name="filter-filler" value="sugar-sprinkles" checked> сахарные посыпки
+            <input type="checkbox" name="filter-filler" value="fruits"> фрукты
+            <input type="checkbox" name="filter-filler" value="syrups"> сиропы
+            <input type="checkbox" name="filter-filler" value="jams"> джемы
+          </p>
+
+          <button class="button-filter" type="submit">Применить</button>
+        </form>
+
+        <ul class="product-list">
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Малиновый джем.">
+            <p class="product-item-title">Малинка</p>
+            <p class="product-item-text">Сливочное мороженое с малиновым джемом</p>
+            <p class="product-price">310 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Фисташковый джем.">
+            <p class="product-item-title">Фисташка</p>
+            <p class="product-item-text">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="product-price">340 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Черничный джем.">
+            <p class="product-item-title">Черника</p>
+            <p class="product-item-text">Крем-брюле с черничным джемом</p>
+            <p class="product-price">330 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Ванильный джем.">
+            <p class="product-item-title">Бабл-гам</p>
+            <p class="product-item-text">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="product-price">320 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Малиновый джем.">
+            <p class="product-item-title">Ежевика</p>
+            <p class="product-item-text">Сливочное мороженое с ежевичным джемом</p>
+            <p class="product-price">330 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Фисташковый джем.">
+            <p class="product-item-title">Банан</p>
+            <p class="product-item-text">Сливочный пломбир с банановым вкусом</p>
+            <p class="product-price">340 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Черничный джем.">
+            <p class="product-item-title">Шоколадка</p>
+            <p class="product-item-text">Классический шоколадный пломбир</p>
+            <p class="product-price">270 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Ванильный джем.">
+            <p class="product-item-title">Клубника</p>
+            <p class="product-item-text">Сливочный пломбир с клубничным вкусом</p>
+            <p class="product-price">300 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Малиновый джем.">
+            <p class="product-item-title">Лимон</p>
+            <p class="product-item-text">Освежающий лимонный сорбет</p>
+            <p class="product-price">310 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Фисташковый джем.">
+            <p class="product-item-title">Ментол</p>
+            <p class="product-item-text">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="product-price">320 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Черничный джем.">
+            <p class="product-item-title">Орешек</p>
+            <p class="product-item-text">Фисташковый пломбир с шоколадным сиропом</p>
+            <p class="product-price">360 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="" width="168" height="168" alt="Ванильный джем.">
+            <p class="product-item-title">Бабл-гам</p>
+            <p class="product-item-text">Крем-брюле</p>
+            <p class="product-price">280 ₽/кг</p>
+            <p class="visually-hidden add-cart">Добавить в корзину</p>
+          </li>
+        </ul>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev" href="#">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+        </ul>
+        <button class="button button-additional pagination-show-more" type="button">Показать еще</button>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
+            <a class="button-social" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="button-social" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
       </section>
-
       <section class="footer-menu">
         <h2 class="visually-hidden">Потребителям</h2>
         <ul class="footer-menu-list">
@@ -85,11 +254,10 @@
           </li>
         </ul>
       </section>
-
       <section class="footer-copyright">
         <h2 class="visually-hidden">Авторское право</h2>
         <a class="footer-copyright-link" href="https://htmlacademy.ru/">
-          <img class="footer-copyright-logo" src="./img/logo_htmlacademy.svg" width="1" height="1" alt="Логотип HTML Academy.">
+          <img class="footer-copyright-logo" src="" width="" height="" alt="Логотип HTML Academy.">
         </a>
         <p class="footer-about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © <time datetime="2021">2021</time></p>
       </section>
