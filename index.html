@@ -9,7 +9,7 @@
 
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-logo">
         <img class="header-logo" src="./images/logo-glacy-shop.svg" width="137" height="56" alt="Логотип Глейси.">
       </a>
       <nav class="navigation">
@@ -24,8 +24,8 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
-        <ul class="navigation-list">
+        <a class="header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск.</span>
@@ -169,13 +169,15 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества.</h2>
-        <p class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <ul class="advantages-list">
-          <li class="advantages-item-text">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="advantages-item-text">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
-          <li class="advantages-item-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="advantages-item-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
-        </ul>
+        <div class="advantages-wrapper">
+          <p class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+          <ul class="advantages-list">
+            <li class="advantages-item-text">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+            <li class="advantages-item-text">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+            <li class="advantages-item-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+            <li class="advantages-item-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+          </ul>
+        </div>
       </section>
       <div class="know-more">
         <article class="news-blog-wrapper">
@@ -206,7 +208,7 @@
             <input type="text" name="delivery-data" id="delivery-data" placeholder="01.04.2020" required>
           </p>
           <p class="delivery-form-phone">
-            <label for="delivery-phone">Телефон</label>
+            <label class="form-label" for="delivery-phone">Телефон</label>
             <input type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00" required>
           </p>
           <p class="delivery-form-address">
@@ -216,14 +218,16 @@
           <button class="button button-additional" type="submit">Отправить</button>
         </form>
       </section>
-      <address class="feedback-wrapper">
-        <p class="feedback-about-text">Адрес главного офиса и офлайн-магазина:</p>
-        <p class="feedback-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <p class="feedback-about-text">Для заказов по телефону:</p>
-        <a class="feedback-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <span class="feedback-signature">(с 10 до 20 ежедневно)</span>
-        <a class="button button-additional" href="#">Форма обратной связи</a>
-      </address>
+      <div class="feedback-main-wrapper">
+        <address class="feedback-wrapper">
+          <p class="feedback-about-text">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="feedback-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="feedback-about-text">Для заказов по телефону:</p>
+          <a class="feedback-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <span class="feedback-signature">(с 10 до 20 ежедневно)</span>
+          <a class="button button-additional" href="#">Форма обратной связи</a>
+        </address>
+      </div>
     </main>
     <footer class="page-footer">
       <section class="footer-social">
@@ -250,7 +254,7 @@
         <h2 class="visually-hidden">Потребителям.</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Для поставщиков</a>
+            <a class="footer-menu-link heart" href="#">Для поставщиков</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">О производстве</a>
