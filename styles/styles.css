@@ -123,15 +123,6 @@ body {
   text-decoration: none;
 }
 
-.gifts-item-title,
-.news-title-link {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: inherit;
-  text-decoration: none;
-}
-
 .popular-item-title,
 .popular-price,
 .product-item-title,
