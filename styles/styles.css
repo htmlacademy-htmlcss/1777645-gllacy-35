@@ -164,3 +164,22 @@ body {
 .advantages-item-text {
   color: var(--dark-main);
 }
+
+.news-blog-wrapper {
+  background-image: url("../images/background/background-news.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.news-text {
+  line-height: 20px;
+  color: var(--dark-main);
+}
+
+.news-title-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+}
