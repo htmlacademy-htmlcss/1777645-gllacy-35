@@ -6,6 +6,7 @@
   --extra-light-main: #fcfcfc;
   --light-additional: #feafc3;
   --neutral-additional: #ff7799;
+  --white-main: #ffffff;
 }
 
 @font-face {
@@ -141,4 +142,25 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.advantages {
+  background-image: url("../images/background/background-advantages.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-wrappers {
+  background-color: var(--white-main);
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.advantages-item-text {
+  color: var(--dark-main);
 }
