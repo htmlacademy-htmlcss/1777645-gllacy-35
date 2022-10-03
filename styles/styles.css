@@ -1,3 +1,11 @@
+:root {
+  --extra-bright-additional: #ff2f64;
+  --extra-dark-main: #2d3440;
+  --extra-light-additional: #ffcbd8;
+  --extra-light-main: #fcfcfc;
+  --light-additional: #feafc3;
+}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -26,4 +34,34 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  color: var(--extra-dark-main);
+  background-color: var(--light-additional);
+}
+
+.button {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 20px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+}
+
+.button-main,
+.button-social {
+  color: inherit;
+  background-color: var(--extra-light-main);
+}
+
+.button-additional,
+.add-button {
+  color: var(--extra-light-main);
+  background-color: var(--extra-bright-additional);
+}
+
+.button-filter {
+  font-size: 14px;
+  color: inherit;
+  background-color: var(--extra-light-additional);
+  text-align: center;
 }
