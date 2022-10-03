@@ -83,3 +83,14 @@ body {
   line-height: 20px;
   background-color: var(--extra-light-additional);
 }
+
+.slider-item-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+}
