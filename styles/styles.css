@@ -1,4 +1,5 @@
 :root {
+  --dark-main: #565c66;
   --extra-bright-additional: #ff2f64;
   --extra-dark-main: #2d3440;
   --extra-light-additional: #ffcbd8;
@@ -111,4 +112,33 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.popular-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.popular-item {
+  background-color: var(--extra-light-main);
+}
+
+.popular-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.popular-item-text {
+  text-align: center;
+  color: var(--dark-main);
+}
+
+.popular-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
