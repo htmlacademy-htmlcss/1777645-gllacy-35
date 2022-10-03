@@ -183,3 +183,17 @@ body {
   color: inherit;
   text-decoration: none;
 }
+
+.newsletter-wrapper {
+  background-image: url("../images/background/background-mail.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-form {
+  background-color: var(--white-main);
+}
+
+.newsletter-text {
+  color: var(--dark-main);
+}
