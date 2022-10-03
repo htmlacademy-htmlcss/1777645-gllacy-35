@@ -197,3 +197,33 @@ body {
 .newsletter-text {
   color: var(--dark-main);
 }
+
+.delivery {
+  background-image: url("../images/background/background-delivery.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-text {
+  color: var(--dark-main);
+}
+
+.delivery-form {
+  background-color: var(--extra-light-main);
+}
+
+.delivery-form-text {
+  color: var(--dark-main);
+}
+
+.form-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
