@@ -4,6 +4,7 @@
   --extra-light-additional: #ffcbd8;
   --extra-light-main: #fcfcfc;
   --light-additional: #feafc3;
+  --neutral-additional: #ff7799;
 }
 
 @font-face {
@@ -93,4 +94,21 @@ body {
 .slider-text {
   font-size: 18px;
   line-height: 24px;
+}
+
+.gifts-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gifts-list {
+  background-color: var(--neutral-additional);
+}
+
+.gifts-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
