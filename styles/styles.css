@@ -329,3 +329,20 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+
+.pagination-link {
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: var(--extra-light-main);
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+}
+
+.pagination-disabled {
+  opacity: 0.3;
+}
