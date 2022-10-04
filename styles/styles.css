@@ -307,3 +307,25 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
+.product-item {
+  background-color: var(--extra-light-main);
+}
+
+.product-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.product-item-text {
+  color: var(--dark-main);
+  text-align: center;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
