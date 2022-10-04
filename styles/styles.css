@@ -297,3 +297,13 @@ body {
   color: inherit;
   text-decoration: none;
 }
+
+.filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.control {
+  font-size: 14px;
+  line-height: 20px;
+}

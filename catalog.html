@@ -60,54 +60,54 @@
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <p class="filter-form-sorting">
-            <label class="filter-sorting" for="filter-sorting">Сортировка:</label>
+          <p class="filter-group">
+            <label class="filter-title" for="filter-sorting">Сортировка:</label>
             <select class="select-control" name="filter-sorting" id="filter-sorting">
               <option value="popular">по популярности</option>
               <option value="expensive">по возрастанию цены</option>
               <option value="cheap">по уменьшению цены</option>
             </select>
           </p>
-          <p class="filter-form-price">
-            <label for="filter-price">Цена: 100 ₽ - 500 ₽</label>
+          <p class="filter-group">
+            <label class="filter-title" for="filter-price">Цена: 100 ₽ - 500 ₽</label>
             <input type="range" name="filter-price" id="filter-price" min="100" max="500" step="10">
           </p>
-          <p class="filter-form-fatness">
-            <label class="filter-fatness">Жирность:</label>
-            <label>
-              <input type="radio" name="filter-fatness" value="0"> 0%
+          <p class="filter-group">
+            <label class="filter-title">Жирность:</label>
+            <label class="control">
+              <input  class="control-input" type="radio" name="filter-fatness" value="0"> 0%
             </label>
-            <label>
-              <input type="radio" name="filter-fatness" value="up-to-10" checked> до 10%
+            <label class="control">
+              <input  class="control-input" type="radio" name="filter-fatness" value="up-to-10" checked> до 10%
             </label>
-            <label>
-              <input type="radio" name="filter-fatness" value="up-to-30"> до 30%
+            <label class="control">
+              <input  class="control-input" type="radio" name="filter-fatness" value="up-to-30"> до 30%
             </label>
-            <label>
-              <input type="radio" name="filter-fatness" value="above-30"> выше 30%
+            <label class="control">
+              <input  class="control-input" type="radio" name="filter-fatness" value="above-30"> выше 30%
             </label>
           </p>
-          <p class="filter-form-filler">
-            <label class="filter-filler">Наполнители:</label>
-            <label>
-              <input type="checkbox" name="filter-filler" value="chocolate" checked> шоколадные
+          <p class="filter-group">
+            <label class="filter-title">Наполнители:</label>
+            <label class="control">
+              <input  class="control-input" type="checkbox" name="filter-filler" value="chocolate" checked> шоколадные
             </label>
-            <label>
-              <input type="checkbox" name="filter-filler" value="sugar-sprinkles" checked> сахарные посыпки
+            <label class="control">
+              <input  class="control-input" type="checkbox" name="filter-filler" value="sugar-sprinkles" checked> сахарные посыпки
             </label>
-            <label>
-              <input type="checkbox" name="filter-filler" value="fruits"> фрукты
+            <label class="control">
+              <input  class="control-input" type="checkbox" name="filter-filler" value="fruits"> фрукты
             </label>
-            <label>
-              <input type="checkbox" name="filter-filler" value="syrups"> сиропы
+            <label class="control">
+              <input  class="control-input" type="checkbox" name="filter-filler" value="syrups"> сиропы
             </label>
-            <label>
-              <input type="checkbox" name="filter-filler" value="jams"> джемы
+            <label class="control">
+              <input  class="control-input" type="checkbox" name="filter-filler" value="jams"> джемы
             </label>
           </p>
           <button class="button button-filter" type="submit">Применить</button>
         </form>
-        <ul class="product-list">
+        <ol class="product-list">
           <li class="product-item">
             <img class="product-image" src="./images/products/product-01.jpg" width="168" height="168" alt="Малиновый джем.">
             <h3 class="product-item-title">Малинка</h3>
@@ -216,7 +216,7 @@
               <span class="visually-hidden">Добавить в корзину.</span>
             </a>
           </li>
-        </ul>
+        </ol>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled" href="#">
