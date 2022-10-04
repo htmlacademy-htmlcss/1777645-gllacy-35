@@ -157,8 +157,8 @@ body {
 
 .advantages {
   background-image: url("../images/background/background-advantages.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 .advantages-wrappers {
@@ -198,8 +198,8 @@ body {
 
 .newsletter-wrapper {
   background-image: url("../images/background/background-mail.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 .newsletter-form {
