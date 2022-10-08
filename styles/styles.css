@@ -136,6 +136,21 @@ body {
   flex-grow: 1;
 }
 
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
+
 .slider-item-title {
   font-weight: 900;
   font-size: 36px;
@@ -145,6 +160,16 @@ body {
 .slider-text {
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-social-list {
+  margin: 0;
+  padding: 0;
 }
 
 .gifts-title {
