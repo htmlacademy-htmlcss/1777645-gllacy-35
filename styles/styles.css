@@ -172,6 +172,13 @@ body {
   padding: 0;
 }
 
+.gifts-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .gifts-title {
   font-weight: 900;
   font-size: 32px;
@@ -180,6 +187,7 @@ body {
 }
 
 .gifts-item {
+  width: 570px;
   background-color: var(--neutral-additional);
 }
 
