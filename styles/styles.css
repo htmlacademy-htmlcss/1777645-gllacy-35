@@ -447,7 +447,16 @@ body {
   line-height: 20px;
 }
 
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .product-item {
+  width: 270px;
   background-color: var(--extra-light-main);
 }
 
@@ -467,6 +476,11 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
