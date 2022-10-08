@@ -261,7 +261,13 @@ body {
   color: var(--dark-main);
 }
 
+.know-more {
+  display: flex;
+  justify-content: space-between;
+}
+
 .news-blog-wrapper {
+  width: 570px;
   background-color: var(--white-main);
   background-image: url("../images/background/background-news.jpg");
   background-size: 100% auto;
@@ -282,6 +288,7 @@ body {
 }
 
 .newsletter-wrapper {
+  width: 570px;
   background-image: url("../images/background/background-mail.png");
   background-size: auto;
   background-repeat: repeat;
