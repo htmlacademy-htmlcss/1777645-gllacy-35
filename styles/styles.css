@@ -342,12 +342,14 @@ body {
 }
 
 .feedback {
+  padding: 0 64px;
   background-image: url("../images/background/background-feedback.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .feedback-wrapper {
+  width: 343px;
   background-color: var(--extra-light-main);
   font-style: normal;
 }
