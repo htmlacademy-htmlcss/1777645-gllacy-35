@@ -85,6 +85,25 @@ body {
   text-align: center;
 }
 
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-right: 16px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-left {
+  width: 435px;
+}
+
 .navigation-link {
   line-height: 20px;
   color: inherit;
@@ -92,7 +111,14 @@ body {
   text-align: center;
 }
 
+.navigation-user-right {
+  display: flex;
+  max-width: 445px;
+  margin-left: auto;
+}
+
 .header-phone {
+  margin-right: 16px;
   font-weight: 700;
   line-height: 20px;
   color: inherit;
