@@ -68,51 +68,55 @@
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <p class="filter-group">
+            <div class="filter-group">
               <label class="filter-title" for="filter-sorting">Сортировка:</label>
               <select class="select-control" name="filter-sorting" id="filter-sorting">
                 <option value="popular">по популярности</option>
                 <option value="expensive">по возрастанию цены</option>
                 <option value="cheap">по уменьшению цены</option>
               </select>
-            </p>
-            <p class="filter-group">
+            </div>
+            <div class="filter-group">
               <label class="filter-title" for="filter-price">Цена: 100 ₽ - 500 ₽</label>
-              <input type="range" name="filter-price" id="filter-price" min="100" max="500" step="10">
-            </p>
-            <p class="filter-group">
+              <input class="radio-control" type="range" name="filter-price" id="filter-price" min="100" max="500" step="10">
+            </div>
+            <div class="filter-group">
               <label class="filter-title">Жирность:</label>
-              <label class="control">
-                <input class="control-input" type="radio" name="filter-fatness" value="0"> 0%
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="filter-fatness" value="up-to-10" checked> до 10%
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="filter-fatness" value="up-to-30"> до 30%
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="filter-fatness" value="above-30"> выше 30%
-              </label>
-            </p>
-            <p class="filter-group">
+              <div class="filter-group-fatness">
+                <label class="control">
+                  <input class="control-input" type="radio" name="filter-fatness" value="0"> 0%
+                </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="filter-fatness" value="up-to-10" checked> до 10%
+                </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="filter-fatness" value="up-to-30"> до 30%
+                </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="filter-fatness" value="above-30"> выше 30%
+                </label>
+              </div>
+            </div>
+            <div class="filter-group">
               <label class="filter-title">Наполнители:</label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="filter-filler" value="chocolate" checked> шоколадные
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="filter-filler" value="sugar-sprinkles" checked> сахарные посыпки
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="filter-filler" value="fruits"> фрукты
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="filter-filler" value="syrups"> сиропы
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="filter-filler" value="jams"> джемы
-              </label>
-            </p>
+              <div class="filter-group-filler">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="filter-filler" value="chocolate" checked> шоколадные
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="filter-filler" value="sugar-sprinkles" checked> сахарные посыпки
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="filter-filler" value="fruits"> фрукты
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="filter-filler" value="syrups"> сиропы
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="filter-filler" value="jams"> джемы
+                </label>
+              </div>
+            </div>
             <button class="button button-filter tag-button" type="submit">Применить</button>
           </form>
           <ol class="product-list">
