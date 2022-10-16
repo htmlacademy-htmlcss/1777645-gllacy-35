@@ -173,7 +173,6 @@ body {
 
 .navigation-user {
   display: flex;
-  align-items: center;
 }
 
 .navigation-user .navigation-link {
@@ -430,17 +429,22 @@ body {
 .know-more {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .news-blog-wrapper {
+  padding: 33px 32px;
   width: 570px;
+  box-sizing: border-box;
   background-color: var(--white-main);
   background-image: url("../images/background/background-news.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .news-text {
+  margin: 0 0 12px;
   line-height: 20px;
   color: var(--dark-main);
 }
