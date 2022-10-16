@@ -865,9 +865,16 @@ body {
   line-height: 24px;
 }
 
+.pagination-button-group {
+  padding: 41px 0;
+  margin-bottom: 40px;
+}
+
 .pagination {
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .pagination-link {
@@ -885,4 +892,8 @@ body {
 
 .pagination-disabled {
   opacity: 0.3;
+}
+
+.separator-line {
+  outline: 1px solid var(--extra-light-additional);
 }
