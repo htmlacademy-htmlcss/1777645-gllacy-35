@@ -826,19 +826,26 @@ body {
 }
 
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 16px;
   padding: 0;
+  list-style-type: none;
 }
 
 .product-item {
-  width: 270px;
+  padding: 0 40px 24px;
   background-color: var(--extra-light-main);
+  border-radius: 8px;
+}
+
+.product-image {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  box-shadow: var(--little-shadow);
 }
 
 .product-item-title {
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -846,11 +853,13 @@ body {
 }
 
 .product-item-text {
-  color: var(--dark-main);
+  margin: 0 0 16px;
   text-align: center;
+  color: var(--dark-main);
 }
 
 .product-price {
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
