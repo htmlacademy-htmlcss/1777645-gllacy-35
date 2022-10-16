@@ -104,6 +104,13 @@ body {
   border-radius: 24px;
 }
 
+.add-button {
+  min-width: 32px;
+  min-height: 32px;
+  background-color: var(--extra-bright-additional);
+  border-radius: 26px;
+}
+
 .button-filter {
   font-size: 14px;
   color: inherit;
@@ -327,26 +334,39 @@ body {
   bottom: 0;
 }
 
-.popular-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+.popular {
+  margin-bottom: 80px;
 }
 
 .popular-title {
+  margin: 0 0 56px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
 }
 
+.popular-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .popular-item {
-  width: 270px;
+  padding: 0 40px 24px;
   background-color: var(--extra-light-main);
+  border-radius: 8px;
+}
+
+.popular-image {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px var(--little-shadow);
 }
 
 .popular-item-title {
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -354,11 +374,19 @@ body {
 }
 
 .popular-item-text {
+  margin: 0 0 16px;
   text-align: center;
   color: var(--dark-main);
 }
 
+.price-button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .popular-price {
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
