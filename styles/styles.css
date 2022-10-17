@@ -297,7 +297,7 @@ body {
 }
 
 .gifts {
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 .gifts-list {
@@ -309,7 +309,7 @@ body {
 }
 
 .gifts-title {
-  margin: 0 0 55px;
+  margin: 0 0 54px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -319,18 +319,13 @@ body {
 .gifts-item {
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 570px;
-  padding: 36px;
+  padding: 37px 206px 36px 36px;
   box-sizing: border-box;
   background-color: var(--neutral-additional);
   border-radius: 16px;
-}
-
-.gifts-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 330px;
 }
 
 .gifts-item-title {
