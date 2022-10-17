@@ -67,7 +67,6 @@ body {
 }
 
 .button {
-  display: inline-block;
   font-weight: 700;
   font-size: inherit;
   line-height: 20px;
@@ -109,6 +108,7 @@ body {
 }
 
 .button-social {
+  display: block;
   min-width: 24px;
   min-height: 24px;
   outline: 2px solid var(--extra-light-additional);
@@ -187,6 +187,7 @@ body {
 
 .navigation-user {
   display: flex;
+  gap: 0 16px;
 }
 
 .navigation-user .navigation-link {
@@ -201,10 +202,6 @@ body {
 
 .navigation-user .navigation-link-search {
   padding: 8px;
-}
-
-.navigation-user .navigation-item:not(:last-of-type) {
-  margin-right: 16px;
 }
 
 .main-container {
@@ -234,7 +231,11 @@ body {
 }
 
 .slider-group-current {
-  padding: 36px 43px 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 470px;
+  padding: 0 0 0 70px;
 }
 
 .slider-item-title {
@@ -269,13 +270,10 @@ body {
 
 .slider-pagination {
   display: flex;
+  gap: 0 8px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.slider-pagination-item:not(:last-of-type) {
-  margin-right: 8px;
 }
 
 .slider-pagination-button {
@@ -293,12 +291,9 @@ body {
 
 .slider-social-list {
   display: flex;
+  gap: 0 16px;
   margin: 0;
   list-style-type: none;
-}
-
-.slider-social-item:not(:last-of-type) {
-  margin-right: 16px;
 }
 
 .gifts {
@@ -322,16 +317,22 @@ body {
 }
 
 .gifts-item {
-  position: relative;
+  display: flex;
   width: 570px;
-  padding: 36px;
   box-sizing: border-box;
   background-color: var(--neutral-additional);
   border-radius: 16px;
 }
 
+.gifts-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 37px 0 35px 36px;
+}
+
 .gifts-item-title {
-  margin: 0 0 28px;
+  margin: 0 0 27px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -339,12 +340,6 @@ body {
 
 .gifts-item-text {
   margin: 0 0 28px;
-}
-
-.gifts-image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .popular {
@@ -744,13 +739,10 @@ body {
 
 .breadcrumbs {
   display: flex;
+  gap: 0 28px;
   margin: 0 0 16px;
   padding: 0;
   list-style-type: none;
-}
-
-.breadcrumbs-item:not(:last-of-type) {
-  margin-right: 28px;
 }
 
 .breadcrumbs-link {
@@ -892,8 +884,4 @@ body {
 
 .pagination-disabled {
   opacity: 0.3;
-}
-
-.separator-line {
-  outline: 1px solid var(--extra-light-additional);
 }
