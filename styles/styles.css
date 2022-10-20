@@ -440,12 +440,16 @@ body {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  gap: 40px 33px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .advantages-item-text {
+  padding-left: 64px;
   color: var(--dark-main);
 }
 
