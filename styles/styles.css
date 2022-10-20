@@ -780,7 +780,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 16px 0;
-  margin-bottom: 44px;
+  margin-bottom: 95px;
 }
 
 .filter-group {
@@ -835,12 +835,17 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 91px 30px;
   margin: 0 0 16px;
   padding: 0;
   list-style-type: none;
 }
 
 .product-item {
+  display: flex;
+  flex-direction: column;
   padding: 0 40px 24px;
   background-color: var(--extra-light-main);
   border-radius: 8px;
@@ -848,9 +853,11 @@ body {
 
 .product-image {
   display: block;
-  margin: 0 auto 16px;
+  margin: -51px auto 16px;
+  order: -1;
   border-radius: 50%;
   box-shadow: var(--little-shadow);
+  object-fit: contain;
 }
 
 .product-item-title {
