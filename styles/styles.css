@@ -255,11 +255,14 @@ body {
   width: 66px;
   height: 150px;
   object-fit: cover;
+  opacity: 0.4;
 }
 
 .slider-image-current {
-  width: auto;
-  height: auto;
+  width: 306px;
+  height: 507px;
+  object-fit: cover;
+  opacity: 1;
 }
 
 .slider-bottom-group {
@@ -350,7 +353,7 @@ body {
 }
 
 .popular-title {
-  margin: 0 0 56px;
+  margin: 0 0 106px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -358,12 +361,17 @@ body {
 }
 
 .popular-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 91px 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .popular-item {
+  display: flex;
+  flex-direction: column;
   padding: 0 40px 24px;
   background-color: var(--extra-light-main);
   border-radius: 8px;
@@ -371,9 +379,11 @@ body {
 
 .popular-image {
   display: block;
-  margin: 0 auto 16px;
+  order: -1;
+  margin: -51px auto 16px;
   border-radius: 50%;
   box-shadow: var(--little-shadow);
+  object-fit: contain;
 }
 
 .popular-item-title {
@@ -394,6 +404,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .popular-price {
