@@ -508,15 +508,16 @@ body {
 }
 
 .newsletter-form-group {
-  display: flex;
+  display: grid;
+  grid-template: 52px / 332px auto;
+  justify-items: start;
   align-items: center;
+  gap: 0 18px;
 }
 
 .newsletter-input-email {
   padding: 14px 16px;
-  margin: 2px 18px 2px 0;
-  width: 332px;
-  height: 48px;
+  width: 100%;
   box-sizing: border-box;
   background-color: var(--white-main);
   border: 1px solid var(--neutral-main);
