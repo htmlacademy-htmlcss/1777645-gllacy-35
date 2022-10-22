@@ -105,6 +105,7 @@ body {
   border: 2px solid var(--extra-light-main);
   background-color: var(--extra-light-additional);
   border-radius: 26px;
+  cursor: pointer;
 }
 
 .button-social {
@@ -286,6 +287,7 @@ body {
   background-color: var(--extra-light-main);
   border-radius: 100px;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .slider-pagination-button-current {
@@ -460,7 +462,7 @@ body {
 }
 
 .news-blog-wrapper {
-  padding: 33px 32px;
+  padding: 33px 235px 33px 32px;
   width: 570px;
   box-sizing: border-box;
   background-color: var(--white-main);
@@ -695,7 +697,7 @@ body {
 
 .footer-menu-list {
   display: grid;
-  grid-template: repeat(2, 20px) / repeat(2, max-content);
+  grid-template: 20px / repeat(2, max-content);
   align-items: end;
   gap: 8px 24px;
   margin: 0;
