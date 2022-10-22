@@ -462,7 +462,7 @@ body {
 }
 
 .news-blog-wrapper {
-  padding: 33px 32px;
+  padding: 33px 235px 33px 32px;
   width: 570px;
   box-sizing: border-box;
   background-color: var(--white-main);
