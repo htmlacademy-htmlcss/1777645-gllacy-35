@@ -105,6 +105,7 @@ body {
   border: 2px solid var(--extra-light-main);
   background-color: var(--extra-light-additional);
   border-radius: 26px;
+  cursor: pointer;
 }
 
 .button-social {
@@ -286,6 +287,7 @@ body {
   background-color: var(--extra-light-main);
   border-radius: 100px;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .slider-pagination-button-current {
