@@ -119,6 +119,7 @@ body {
 }
 
 .add-button {
+  position: relative;
   min-width: 32px;
   min-height: 32px;
   background-color: var(--extra-bright-additional);
@@ -473,6 +474,16 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.add-button-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: var(--extra-light-main);
 }
 
 .advantages {
