@@ -81,7 +81,7 @@ body {
 }
 
 .button-main {
-  padding: 12px 32px;
+  padding: 12px 32px 12px 33px;
   color: inherit;
   background-color: var(--extra-light-main);
   outline: 4px solid var(--extra-light-additional);
@@ -100,6 +100,7 @@ body {
 }
 
 .slider-button {
+  position: relative;
   min-width: 38px;
   min-height: 38px;
   border: 2px solid var(--extra-light-main);
@@ -109,6 +110,7 @@ body {
 }
 
 .button-social {
+  position: relative;
   display: block;
   min-width: 24px;
   min-height: 24px;
@@ -252,7 +254,7 @@ body {
 }
 
 .slider {
-  margin-bottom: 80px;
+  margin-bottom: 81px;
 }
 
 .slider-list {
@@ -303,6 +305,16 @@ body {
   opacity: 1;
 }
 
+.slider-button-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--extra-light-main);
+}
+
 .slider-bottom-group {
   display: flex;
   justify-content: space-between;
@@ -336,6 +348,16 @@ body {
   gap: 0 16px;
   margin: 0;
   list-style-type: none;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: var(--extra-light-main);
 }
 
 .gifts {
