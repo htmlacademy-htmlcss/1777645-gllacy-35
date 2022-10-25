@@ -1080,6 +1080,14 @@ body {
   border-radius: 50px;
 }
 
+.pagination-prev {
+  justify-content: flex-start;
+}
+
+.pagination-next {
+  justify-content: flex-end;
+}
+
 .pagination-disabled {
   opacity: 0.3;
 }
