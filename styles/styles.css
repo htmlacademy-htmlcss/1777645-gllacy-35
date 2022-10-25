@@ -15,6 +15,11 @@
   --big-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -497,14 +502,14 @@ body {
 
 .advantages-wrappers {
   width: 1122px;
-  padding: 56px 40px;
+  padding: 57px 40px 56px 40px;
   box-sizing: border-box;
   background-color: var(--white-main);
   border-radius: 16px;
 }
 
 .advantages-title {
-  margin: 0 0 56px;
+  margin: 0 0 55px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -521,8 +526,69 @@ body {
 }
 
 .advantages-item-text {
+  position: relative;
   padding-left: 64px;
   color: var(--dark-main);
+}
+
+.advantages-icon-production::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--extra-dark-main);
+  border-radius: 50%;
+  background-image: url("../images/icons/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+}
+
+.advantages-icon-purchase::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--extra-dark-main);
+  border-radius: 50%;
+  background-image: url("../images/icons/cow.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+}
+
+.advantages-icon-ingredients::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--extra-dark-main);
+  border-radius: 50%;
+  background-image: url("../images/icons/leaf.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+}
+
+.advantages-icon-transportation::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--extra-dark-main);
+  border-radius: 50%;
+  background-image: url("../images/icons/thermometer.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
 }
 
 .know-more {
