@@ -484,6 +484,8 @@ body {
 }
 
 .slider-pagination-button {
+  display: block;
+  padding: 0;
   min-width: 12px;
   min-height: 12px;
   border: none;
@@ -495,6 +497,34 @@ body {
 
 .slider-pagination-button-current {
   opacity: 1;
+}
+
+.slider-pagination-button:hover {
+  background-color: var(--extra-light-additional-3);
+  border: 1px solid var(--extra-light-main);
+  opacity: 1;
+}
+
+.slider-pagination-button:focus-visible {
+  background-color: var(--extra-light-additional-3);
+  border: 1px solid var(--extra-dark-main);
+  outline: none;
+  opacity: 1;
+}
+
+@supports not selector(:focus-visible) {
+  .slider-pagination-button:focus {
+    background-color: var(--extra-light-additional-3);
+    border: 1px solid var(--extra-dark-main);
+    outline: none;
+    opacity: 1;
+  }
+}
+
+.slider-pagination-button:active {
+  background-color: var(--extra-light-main);
+  border: none;
+  opacity: 0.5;
 }
 
 .slider-social-list {
