@@ -169,6 +169,28 @@ body {
   border-radius: 26px;
 }
 
+.button-social:hover {
+  background: var(--extra-dark-main);
+}
+
+.button-social:focus-visible {
+  background: var(--extra-dark-main);
+  box-shadow: 0 0 0 2px var(--extra-dark-main);
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .button-social:focus {
+    background: var(--extra-dark-main);
+    box-shadow: 0 0 0 2px var(--extra-dark-main);
+    outline: none;
+  }
+}
+
+.button-social:active {
+  opacity: 0.5;
+}
+
 .add-button {
   position: relative;
   min-width: 32px;
