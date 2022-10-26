@@ -127,6 +127,37 @@ body {
   background-color: var(--extra-light-additional-3);
   border-radius: 26px;
   cursor: pointer;
+  color: var(--extra-light-main);
+}
+
+.slider-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.slider-button:hover:not(:disabled) {
+  background: var(--extra-light-main);
+  color: var(--extra-dark-main);
+}
+
+.slider-button:focus-visible {
+  color: var(--extra-dark-main);
+  box-shadow: inset 0 0 0 2px var(--extra-dark-main);
+  outline: none;
+  border: none;
+}
+
+@supports not selector(:focus-visible) {
+  .slider-button:focus {
+    color: var(--extra-dark-main);
+    box-shadow: inset 0 0 0 2px var(--extra-dark-main);
+    outline: none;
+    border: none;
+  }
+}
+
+.slider-button:active:not(:disabled) {
+  background: var(--extra-light-additional-5);
 }
 
 .button-social {
@@ -216,7 +247,6 @@ body {
 
 .navigation-link:active {
   background: var(--extra-light-main);
-  box-shadow: none;
 }
 
 .navigation-link-catalog {
@@ -435,7 +465,6 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  color: var(--extra-light-main);
 }
 
 .slider-bottom-group {
