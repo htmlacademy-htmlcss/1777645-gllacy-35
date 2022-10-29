@@ -1,6 +1,8 @@
 :root {
   --blue-additional: #69a9ff;
   --dark-main: #565c66;
+  --extra-black-main: #242424;
+  --extra-black-main-24: rgb(36, 36, 36, 0.24);
   --extra-bright-additional: #ff2f64;
   --extra-dark-main: #2d3440;
   --extra-dark-main-translucent: rgba(45, 52, 64, 0.5);
@@ -10,11 +12,13 @@
   --extra-light-neutral: rgba(255, 47, 100, 0.3);
   --extra-light-main: #fcfcfc;
   --light-additional: #feafc3;
+  --light-main: #e7e7e7;
   --neutral-additional: #ff7799;
   --neutral-main: #b9b9b9;
   --white-main: #ffffff;
   --yellow-additional: #fcc850;
   --little-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  --little-shadow-1: 0 4px 15px rgba(133, 133, 133, 0.15);
   --medium-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   --big-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
@@ -107,6 +111,60 @@ body {
   outline: 4px solid var(--extra-light-additional-4);
   box-shadow: var(--little-shadow);
   border-radius: 26px;
+}
+
+.button-main:disabled {
+  font-weight: 400;
+  color: var(--neutral-main);
+  background-color: var(--light-main);
+  cursor: default;
+}
+
+.button-main:hover:not(:disabled) {
+  background-color: var(--extra-light-additional-4);
+  box-shadow: var(--little-shadow-1);
+  outline: 4px solid var(--extra-light-main);
+}
+
+.button-main:focus-visible {
+  background-color: var(--extra-light-additional-5);
+  box-shadow: var(--little-shadow-1), 0 0 0 2px var(--extra-dark-main);
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .button-main:focus {
+    background-color: var(--extra-light-additional-5);
+    box-shadow: var(--little-shadow-1), 0 0 0 2px var(--extra-dark-main);
+    outline: none;
+  }
+}
+
+.button-main:active:not(:disabled) {
+  background-color: var(--extra-light-main);
+  outline: 2px solid var(--extra-dark-main);
+  box-shadow: var(--little-shadow);
+}
+
+.button-main-loader {
+  position: relative;
+  padding-right: 56px;
+}
+
+.button-main-loader::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: auto;
+  right: 32px;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--extra-black-main-24);
+  border-right-color: var(--extra-black-main);
+  border-radius: 50%;
+  transform: rotate(-45deg);
 }
 
 .button-additional {
