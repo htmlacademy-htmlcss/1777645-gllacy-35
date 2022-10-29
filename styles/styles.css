@@ -348,8 +348,36 @@ body {
   font-size: 14px;
   color: inherit;
   background-color: var(--extra-light-additional-3);
-  border: 2px solid var(--extra-light-main);
+  outline: 2px solid var(--extra-light-main);
   border-radius: 20px;
+  margin-bottom: 2px;
+}
+
+.button-filter:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.button-filter:hover:not(:disabled) {
+  background-color: var(--extra-light-main);
+  outline: 2px solid var(--extra-light-additional-3);
+}
+
+.button-filter:focus-visible {
+  box-shadow: 0 0 0 2px var(--extra-dark-main);
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .button-filter:focus {
+    box-shadow: 0 0 0 2px var(--extra-dark-main);
+    outline: none;
+  }
+}
+
+.button-filter:active:not(:disabled) {
+  background-color: var(--extra-light-additional-5);
+  outline: none;
 }
 
 .page-header {
