@@ -6,6 +6,7 @@
   --extra-bright-additional: #ff2f64;
   --extra-dark-main: #2d3440;
   --extra-dark-main-translucent: rgba(45, 52, 64, 0.5);
+  --extra-light-additional-24: rgba(252, 252, 252, 0.24);
   --extra-light-additional-3: rgba(252, 252, 252, 0.3);
   --extra-light-additional-4: rgba(252, 252, 252, 0.4);
   --extra-light-additional-5: rgba(252, 252, 252, 0.5);
@@ -15,6 +16,7 @@
   --light-main: #e7e7e7;
   --neutral-additional: #ff7799;
   --neutral-main: #b9b9b9;
+  --neutral-main-3: rgba(185, 185, 185, 0.3);
   --white-main: #ffffff;
   --yellow-additional: #fcc850;
   --little-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
@@ -175,6 +177,60 @@ body {
   box-shadow: var(--little-shadow);
   border-radius: 26px;
   cursor: pointer;
+}
+
+.button-additional:disabled {
+  font-weight: 400;
+  color: var(--dark-main);
+  background-color: var(--neutral-main);
+  outline: 4px solid var(--neutral-main-3);
+  cursor: default;
+}
+
+.button-additional:hover:not(:disabled) {
+  color: var(--extra-dark-main);
+  background-color: var(--extra-light-additional-3);
+  box-shadow: 0 0 0 4px var(--extra-bright-additional);
+}
+
+.button-additional:focus-visible {
+  box-shadow: var(--little-shadow), 0 0 0 2px var(--extra-dark-main);
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .button-additional:focus {
+    box-shadow: var(--little-shadow), 0 0 0 2px var(--extra-dark-main);
+    outline: none;
+  }
+}
+
+.button-additional:active:not(:disabled) {
+  color: var(--extra-light-main);
+  background-color: var(--light-additional);
+  outline: 2px solid var(--extra-dark-main);
+  box-shadow: var(--little-shadow);
+}
+
+.button-additional-loader {
+  position: relative;
+  padding-right: 56px;
+}
+
+.button-additional-loader::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: auto;
+  right: 32px;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--extra-light-additional-24);
+  border-right-color: var(--extra-light-main);
+  border-radius: 50%;
+  transform: rotate(-45deg);
 }
 
 .slider-button {
@@ -905,10 +961,11 @@ body {
 
 .newsletter-form-group {
   display: grid;
-  grid-template: 52px / 332px auto;
+  grid-template: 52px / 1fr auto;
   justify-items: start;
   align-items: center;
   gap: 0 18px;
+  padding-right: 4px;
 }
 
 .newsletter-input-email {
@@ -1033,7 +1090,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 40px 42px;
+  padding: 40px 29px 42px 40px;
   width: 343px;
   box-sizing: border-box;
   font-style: normal;
