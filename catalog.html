@@ -92,8 +92,25 @@
               </select>
             </div>
             <div class="filter-group">
-              <label class="filter-title" for="filter-price">Цена: 100 ₽ - 500 ₽</label>
-              <input class="radio-control" type="range" name="filter-price" id="filter-price" min="100" max="500" step="10">
+              <div class="filter-price-wrapper">
+                <span class="filter-title filter-title-price">Цена:</span>
+                <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                <input class="range-input" type="number" value="100" name="min-price" id="min-price"> ₽ -
+                <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                <input class="range-input" type="number" value="500" name="max-price" id="max-price"> ₽
+              </div>
+              <div class="range-wrapper">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 20%; width: 44%">
+                    <button class="range-toggle range-toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle range-toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="filter-group">
               <label class="filter-title">Жирность:</label>
