@@ -669,6 +669,56 @@ body {
   left: 16px;
 }
 
+.sig-in-popover {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 420px;
+  padding: 49px 48px 52px;
+  box-shadow: var(--medium-shadow);
+  background-color: var(--extra-light-main);
+  border-radius: 4px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.sig-in-popover-title {
+  margin: 0 0 31px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.sig-in-popover-form {
+  display: grid;
+  grid-template: repeat(4, auto) / min-content auto;
+  gap: 0 23px;
+}
+
+.field-input-email {
+  margin: 0 0 16px;
+  grid-area: 1/1/2/-1;
+}
+
+.field-input-password {
+  margin: 0 0 32px;
+  grid-area: 2/1/3/-1;
+}
+
+.sig-in-popover-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.sig-in-popover-link:hover {
+  color: var(--neutral-main);
+}
+
+.sig-in-popover-link:active {
+  color: var(--dark-main);
+}
+
 .navigation-user .navigation-link-cart {
   padding-left: 38px;
 }
