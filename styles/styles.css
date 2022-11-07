@@ -182,7 +182,6 @@ body {
   outline: 4px solid var(--extra-light-neutral);
   box-shadow: var(--little-shadow-2);
   border-radius: 26px;
-  cursor: pointer;
 }
 
 .button-additional:disabled {
