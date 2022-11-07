@@ -8,6 +8,9 @@ const backgroundPink = document.querySelector(".background-pink");
 const sliderNext = document.querySelector(".slider-next");
 const sliderPrev = document.querySelector(".slider-prev");
 
+const buttonFeedback = document.querySelector(".button-feedback");
+const feedbackModal = document.querySelector(".feedback-modal");
+const feedbackModalCloseButton = document.querySelector(".feedback-modal-close-button");
 
 sliderNext.onclick = function () {
 
@@ -136,3 +139,21 @@ sliderPrev.onclick = function () {
     }
   }
 }
+
+buttonFeedback.addEventListener("click", (event) => {
+  event.preventDefault();
+  feedbackModal.classList.toggle("feedback-modal-opened");
+});
+
+feedbackModalCloseButton.addEventListener("click", () => {
+  feedbackModal.classList.toggle("feedback-modal-opened");
+});
+
+window.addEventListener("keydown", function (event) {
+  if (event.keyCode === 27) {
+    if (feedbackModal.classList.contains("feedback-modal-opened")) {
+      event.preventDefault();
+      feedbackModal.classList.remove("feedback-modal-opened");
+    };
+  };
+});
