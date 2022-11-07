@@ -24,8 +24,9 @@
   --error: #ea5454;
   --white-main: #ffffff;
   --yellow-additional: #fcc850;
-  --little-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  --little-shadow-1: 0 4px 15px rgba(133, 133, 133, 0.15);
+  --little-shadow-1: 0 4px 8px rgba(194, 194, 194, 0.2);
+  --little-shadow-2: 0 4px 12px rgba(45, 52, 64, 0.1);
+  --little-shadow-3: 0 4px 15px rgba(133, 133, 133, 0.15);
   --medium-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   --big-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
@@ -116,7 +117,7 @@ body {
   color: inherit;
   background-color: var(--extra-light-main);
   outline: 4px solid var(--extra-light-additional-4);
-  box-shadow: var(--little-shadow);
+  box-shadow: var(--little-shadow-2);
   border-radius: 26px;
 }
 
@@ -129,20 +130,20 @@ body {
 
 .button-main:hover:not(:disabled) {
   background-color: var(--extra-light-additional-4);
-  box-shadow: var(--little-shadow-1);
+  box-shadow: var(--little-shadow-3);
   outline: 4px solid var(--extra-light-main);
 }
 
 .button-main:focus-visible {
   background-color: var(--extra-light-additional-5);
-  box-shadow: var(--little-shadow-1), 0 0 0 2px var(--extra-dark-main);
+  box-shadow: var(--little-shadow-3), 0 0 0 2px var(--extra-dark-main);
   outline: none;
 }
 
 @supports not selector(:focus-visible) {
   .button-main:focus {
     background-color: var(--extra-light-additional-5);
-    box-shadow: var(--little-shadow-1), 0 0 0 2px var(--extra-dark-main);
+    box-shadow: var(--little-shadow-3), 0 0 0 2px var(--extra-dark-main);
     outline: none;
   }
 }
@@ -150,7 +151,7 @@ body {
 .button-main:active:not(:disabled) {
   background-color: var(--extra-light-main);
   outline: 2px solid var(--extra-dark-main);
-  box-shadow: var(--little-shadow);
+  box-shadow: var(--little-shadow-2);
 }
 
 .button-main-loader {
@@ -179,7 +180,7 @@ body {
   color: var(--extra-light-main);
   background-color: var(--extra-bright-additional);
   outline: 4px solid var(--extra-light-neutral);
-  box-shadow: var(--little-shadow);
+  box-shadow: var(--little-shadow-2);
   border-radius: 26px;
   cursor: pointer;
 }
@@ -199,13 +200,13 @@ body {
 }
 
 .button-additional:focus-visible {
-  box-shadow: var(--little-shadow), 0 0 0 2px var(--extra-dark-main);
+  box-shadow: var(--little-shadow-2), 0 0 0 2px var(--extra-dark-main);
   outline: none;
 }
 
 @supports not selector(:focus-visible) {
   .button-additional:focus {
-    box-shadow: var(--little-shadow), 0 0 0 2px var(--extra-dark-main);
+    box-shadow: var(--little-shadow-2), 0 0 0 2px var(--extra-dark-main);
     outline: none;
   }
 }
@@ -214,7 +215,7 @@ body {
   color: var(--extra-light-main);
   background-color: var(--light-additional);
   outline: 2px solid var(--extra-dark-main);
-  box-shadow: var(--little-shadow);
+  box-shadow: var(--little-shadow-2);
 }
 
 .button-additional-loader {
@@ -1457,6 +1458,61 @@ body {
   line-height: 20px;
 }
 
+.tooltip {
+  position: absolute;
+  margin-left: 5px;
+}
+
+.tooltip-toggle {
+  border: none;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/info.svg") 0 / 14px no-repeat;
+  cursor: pointer;
+}
+
+.tooltip-toggle:hover {
+  opacity: 0.5;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -8px;
+  left: 22px;
+  padding: 9px 8px;
+  width: 163px;
+  color: var(--dark-main);
+  background-color: var(--white-main);
+  border: 1px solid var(--neutral-main);
+  box-shadow: var(--little-shadow-1);
+  border-radius: 1px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 1;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--neutral-main);
+  background-color: var(--white-main);
+  border-right: none;
+  border-top: none;
+  transform: rotate(45deg);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
 .feedback {
   padding: 64px;
   background: var(--extra-light-main) url("../images/background/background-feedback.jpg") 0/100% auto no-repeat;
@@ -2007,7 +2063,7 @@ body {
   margin: -51px auto 16px;
   order: -1;
   border-radius: 50%;
-  box-shadow: var(--little-shadow);
+  box-shadow: var(--little-shadow-2);
   object-fit: contain;
 }
 
