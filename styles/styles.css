@@ -632,6 +632,34 @@ body {
   padding: 8px;
 }
 
+.search-popover {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 356px;
+  padding: 24px 16px;
+  box-shadow: var(--medium-shadow);
+  background-color: var(--extra-light-main);
+  border-radius: 4px;
+  z-index: 1;
+  box-sizing: border-box;
+  display: none;
+}
+
+.field-search::-webkit-search-cancel-button {
+  position: absolute;
+  right: 10px;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icons/cross-grey.svg") no-repeat;
+  cursor: pointer;
+}
+
+.field-search::-webkit-search-cancel-button:hover {
+  background: url("../images/icons/cross-black.svg") no-repeat;
+}
+
 .navigation-user .navigation-link-login {
   padding-left: 39px;
 }

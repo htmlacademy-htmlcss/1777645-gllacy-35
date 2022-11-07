@@ -53,13 +53,19 @@
         <div class="navigation-user-right">
           <a class="navigation-link header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-search" href="#">
+            <li class="navigation-item navigation-item-active">
+              <a class="navigation-link navigation-link-search navigation-link-active" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.663 7.33a4.667 4.667 0 1 1 8.028 3.238.683.683 0 0 0-.123.123A4.667 4.667 0 0 1 2.664 7.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" />
                 </svg>
-                <span class="visually-hidden">Поиск.</span>
+                <span class="visually-hidden">Поиск по сайту.</span>
               </a>
+              <div class="search-popover popover-opened">
+                <form action="https://echo.htmlacademy.ru/" method="get">
+                  <label class="visually-hidden" for="search">Поле поиска.</label>
+                  <input class="field-search field-input input-placeholder" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+                </form>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-login" href="#">
