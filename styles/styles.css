@@ -728,6 +728,28 @@ body {
   left: 16px;
 }
 
+.empty-cart-popover {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 288px;
+  padding: 49px 28px 47px;
+  text-align: center;
+  box-shadow: var(--big-shadow);
+  background-color: var(--extra-light-main);
+  border-radius: 4px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.empty-cart-popover-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .navigation-item-active:focus-within .popover-opened {
   display: block;
 }
