@@ -29,6 +29,7 @@
   --little-shadow-3: 0 4px 15px rgba(133, 133, 133, 0.15);
   --medium-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   --big-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  --overlay: rgba(0, 0, 0, 0.3);
 }
 
 *::after,
@@ -601,7 +602,7 @@ body {
 .navigation-user-right {
   display: flex;
   align-items: center;
-  max-width: 450px;
+  max-width: 500px;
   margin-left: auto;
 }
 
@@ -1647,6 +1648,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  background-color: var(--overlay);
 }
 
 .feedback-modal-opened {
