@@ -3,6 +3,7 @@ const imageContainers = document.querySelectorAll(".image-container");
 const sliderImages = document.querySelectorAll(".slider-image");
 const sliderGroupDescs = document.querySelectorAll(".slider-group-desc");
 const sliderPaginationButtons = document.querySelectorAll(".slider-pagination-button");
+const buttonSlider = document.querySelectorAll(".button-slider")
 
 const backgroundPink = document.querySelector(".background-pink");
 const sliderNext = document.querySelector(".slider-next");
@@ -20,6 +21,16 @@ sliderNext.onclick = function () {
     backgroundPink.classList.replace("background-blue", "background-yellow")
   } else if (backgroundPink.classList.contains("background-yellow")) {
     backgroundPink.classList.replace("background-yellow", "background-pink")
+  }
+
+  for (let buttonSlide of buttonSlider) {
+    if (buttonSlide.classList.contains("button-slider-current")) {
+      buttonSlide.classList.replace("button-slider-current", "button-slider-prev")
+    } else if (buttonSlide.classList.contains("button-slider-prev")) {
+      buttonSlide.classList.replace("button-slider-prev", "button-slider-next")
+    } else if (buttonSlide.classList.contains("button-slider-next")) {
+      buttonSlide.classList.replace("button-slider-next", "button-slider-current")
+    }
   }
 
   for (let sliderItem of sliderItems) {
@@ -84,6 +95,16 @@ sliderPrev.onclick = function () {
     backgroundPink.classList.replace("background-yellow", "background-blue")
   } else if (backgroundPink.classList.contains("background-blue")) {
     backgroundPink.classList.replace("background-blue", "background-pink")
+  }
+
+  for (let buttonSlide of buttonSlider) {
+    if (buttonSlide.classList.contains("button-slider-current")) {
+      buttonSlide.classList.replace("button-slider-current", "button-slider-next")
+    } else if (buttonSlide.classList.contains("button-slider-next")) {
+      buttonSlide.classList.replace("button-slider-next", "button-slider-prev")
+    } else if (buttonSlide.classList.contains("button-slider-prev")) {
+      buttonSlide.classList.replace("button-slider-prev", "button-slider-current")
+    }
   }
 
   for (let sliderItem of sliderItems) {
